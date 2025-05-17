@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IoT Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>💙 IoTDash</h2>
+      <nav>
+        <ul>
+          <li class="active">📡 Live Data <span class="hot">Hot</span></li>
+          <li>⚙️ Settings</li>
+          <li>🕒 History</li>
+        </ul>
+      </nav>
+      <footer>
+        <p>Crafted by <span>AzisBagas</span></p>
+      </footer>
+    </aside>
+
+    <main class="dashboard">
+      <h1>Welcome to <span class="highlight">Your IoT Dashboard</span></h1>
+      <p class="subtitle">Monitoring suhu & kelembapan dari ESP8266 + DHT11</p>
+
+      <div class="cards">
+        <div class="card temperature">
+          <h3>🌡 TEMPERATURE</h3>
+          <p class="value" id="temp-value">-- °C</p>
+          <p class="updated" id="temp-updated">Loading...</p>
+        </div>
+
+        <div class="card humidity">
+          <h3>💧 HUMIDITY <span class="status">Stable</span></h3>
+          <p class="value" id="humid-value">-- %</p>
+          <p class="range">Ideal range: 40-70%</p>
+        </div>
+
+        <div class="card device-status">
+          <h3>📶 DEVICE STATUS <span class="online">● Online</span></h3>
+          <p>ESP8266</p>
+          <p>📥 DHT11 Monitoring</p>
+        </div>
+      </div>
+
+      <p class="footer-note">This dashboard was carefully crafted by <span>AzisBagas</span> — Not just code, but passion</p>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
